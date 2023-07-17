@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(171, 202, 217);
+        }
+        .top{   /*more height allocated-to fit winner name*/ 
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{ 
+            font-size: 3rem;
+        }
+
+        .dice{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .player{
+            border: 1px black solid;
+            margin: 20px;
+            height: 250px;
+        }
+        img{
+            width: 100px;
+            display: flex;
+            margin: 40px;
+        }
+        h4{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <h1>Refresh</h1>
+    </div>
+    <div class="dice">
+        <div class="player">
+            <h4>Player 1</h4>
+            <img src="./img/dice6.png">
+        </div>
+        <div class="player">
+            <h4>Player 2</h4>
+            <img src="./img/dice6.png">
+        </div>
+    </div>
+
+    <script>
+/* what to do 1]use Math.random-to get dice value 2]based on that show dice img 3]compare both dice value & then print winner*/
+
+    /* 1]creating dice values */
+        var a = Math.round(Math.random()*6) + 1;  //bcz x*6 is less than 6 always.
+        var b = Math.round(Math.random()*6) + 1;
+
+    /* 2]showing dice value */ 
+        let c = document.querySelectorAll('.dice img');/* it selects descendent element img(array) of dice class  */
+
+        // dice 1
+        if(a==1){
+            c[0].setAttribute('src','./img/dice1.png')
+        }
+        if(a==2){
+            c[0].setAttribute('src','./img/dice2.png')
+        }
+        if(a==3){
+            c[0].setAttribute('src','./img/dice3.png')
+        }
+        if(a==4){
+            c[0].setAttribute('src','./img/dice4.png')
+        }
+        if(a==5){
+            c[0].setAttribute('src','./img/dice5.png')
+        }
+        if(a==6){
+            c[0].setAttribute('src','./img/dice6.png')
+        }
+        // dice 2
+        if(b==1){
+            c[1].setAttribute('src','./img/dice1.png')
+        }
+        if(b==2){
+            c[1].setAttribute('src','./img/dice2.png')
+        }
+        if(b==3){
+            c[1].setAttribute('src','./img/dice3.png')
+        }
+        if(b==4){
+            c[1].setAttribute('src','./img/dice4.png')
+        }
+        if(b==5){
+            c[1].setAttribute('src','./img/dice5.png')
+        }
+        if(b==6){
+            c[1].setAttribute('src','./img/dice6.png')
+        }
+
+    //3]comparing dice values & printing winner
+        //storing h1 value
+        d = document.querySelector('.top h1');
+        if(a>b){
+            d.innerText = 'Player 1 Wins'
+        }
+        else if(a<b){
+            d.innerText = 'Player 2 Wins'
+        }
+        else if(a==b){
+            d.innerText = 'Draw'
+        }
+    </script>
+</body>
+</html>

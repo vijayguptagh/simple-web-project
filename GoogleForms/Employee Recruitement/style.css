@@ -1,0 +1,42 @@
+
+#i0{ /*whole form div tag*/
+    background-color: #d2d4d4;
+}
+.c1{ /*all input type containers */
+    padding: 10px; 
+    margin: 10px 22vw;
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: white;
+}
+.zz{ /*required */
+    color: red;
+}
+#i1{ /*1st container-candidate */
+    border-top: purple solid 10px;
+}
+#xx{ /*candidate details */
+    font-size: 30px;
+    font-weight:bold;
+}
+#yy{ /*candidates are required to fill form */
+    font-size: 20px;
+}
+#aaa{ /*submit button*/
+    width: 65px;
+    height: 35px;
+    background: purple;
+    color: white;
+    border-radius:7px;
+    margin-left: 22vw;
+}
+#bbb{ /*reset button */
+    width: 65px;
+    height: 35px;
+    background-color: #d2d4d4;
+    color: purple;
+    border: 0px;
+    /*to make reset button exactly below the end of form */
+    position: absolute;
+    right: 22vw;
+}

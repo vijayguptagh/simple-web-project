@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Positioning Demo</h1>
+    </header>
+    <main>
+        <div class="button-group">
+            <button id="static-btn" class="button">Static Position</button>
+            <button id="relative-btn" class="button">relative Position</button>
+            <button id="absolute-btn" class="button">Absolute Position</button>
+            <button id="fixed-btn" class="button">Fixed Position</button>
+        </div>
+
+        <div class="position-type static"style="display: block;">
+            <h2>Static Position</h2>
+            <code>
+                position:static;<br>
+                left:50px;<br>
+                top:50px;<br>
+            </code>
+            <div class="box"></div>
+        </div>
+        <div class="position-type relative">
+            <h2>Relative Position</h2>
+            <code>
+                position:relative;<br>
+                left:50px;<br>
+                top:50px;<br>
+            </code>
+            <div class="box"></div>
+        </div>
+        <div class="position-type absolute">
+            <h2>Absolute Position</h2>
+            <code>
+                position:absolute;<br>
+                left:50px;<br>
+                top:50px;<br>
+            </code>
+            <div class="box"></div>
+        </div>
+        <div class="position-type fixed">
+            <h2>Fixed Position</h2>
+            <code>
+                position:fixed;<br>
+                left:50px;<br>
+                top:50px;<br>
+            </code>
+            <div class="box"></div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; www.webdevelopment.github.io</p>
+    </footer>
+
+    <script>
+        /* aim is that when we click on a button display corresponding position container */
+
+        /* storing button variables */
+        const staticBtn = document.getElementById('static-btn'); 
+        const relativeBtn = document.getElementById('relative-btn'); 
+        const absoluteBtn = document.getElementById('absolute-btn'); 
+        const fixedBtn = document.getElementById('fixed-btn'); 
+
+        /* storing container variable which will be shown for corresponding button press */
+        // const staticPosition = document.getElementByClassName('static');
+        const staticPosition = document.querySelector('.static');
+        const relativePosition = document.querySelector('.relative');
+        const absolutePosition = document.querySelector('.absolute');
+        const fixedPosition = document.querySelector('.fixed');
+        /* const relativePosition = document.getElementsByClassName('relative');
+        const absolutePosition = document.getElementsByClassName('absolute');
+        const fixedPosition = document.getElementsByClassName('fixed'); */
+
+        /* when user presses static button show static container like for other also */
+        /* you have to attach a event to var staticBtn to display staticPosition variable and triggering condition is on click on var staticBtn  */
+        staticBtn.addEventListener('click',() => { 
+            staticPosition.style.display = 'block';
+            relativePosition.style.display = 'none';
+            absolutePosition.style.display = 'none';
+            fixedPosition.style.display = 'none';
+        });
+        relativeBtn.addEventListener('click',() => {
+            staticPosition.style.display = 'none';
+            relativePosition.style.display = 'block';
+            absolutePosition.style.display = 'none';
+            fixedPosition.style.display = 'none';
+        });
+        absoluteBtn.addEventListener('click',() => {
+            staticPosition.style.display = 'none';
+            relativePosition.style.display = 'none';
+            absolutePosition.style.display = 'block';
+            fixedPosition.style.display = 'none';
+        });
+        fixedBtn.addEventListener('click',() => {
+            staticPosition.style.display = 'none';
+            relativePosition.style.display = 'none';
+            absolutePosition.style.display = 'none';
+            fixedPosition.style.display = 'block';
+        });
+    </script>
+</body>
+</html>

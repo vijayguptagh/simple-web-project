@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="id1000">
+        <form>
+            <div class="c1" id="id1">
+                <p id="id11">Student Details</p>
+                <hr>
+                <p id="id12">Students are required to fill their details.</p>
+                <p id="required">*Required</p>
+            </div>
+            <div class="c1" id="id2">
+                <label for='id13'>
+                    <p>What is your name?<span id="required">*</span></p>
+                    <input type="input" id="id13" placeholder="your answer" required>
+            </div>
+            <div class="c1" id="id3">
+                <label for='id19'>
+                    <p>What is your age?</p>
+                </label>
+                <input type="number" id="id19" min="18" max="30">
+            </div>
+            <div class="c1" id="id4">
+                <label for='id15'>
+                    <p>Enter your college name<span id="required">*</span></p>
+                    <input type="text" id="id15" placeholder="your answer" required>
+            </div>
+            <div class="c1" id="id5" required>
+                <p>Enter your course<span id="required">*</span></p>
+                <label for='id21'><input type="radio" name="r[]" id="id21" type="box">BE</label><br>
+                <label for='id22'><input type="radio" name="r[]" id="id22">BCA</label><br>
+                <label for='id23'><input type="radio" name="r[]" id="id23">MBA</label><br>
+                <label for='id24'><input type="radio" name="r[]" id="id24">MTech</label> <br>
+            </div>
+            <div class="c1" id="id6">
+                <label for='x'>
+                    <p>Enter your living address</p>
+                </label>
+                <textarea placeholder="state,district,city" id="x"></textarea>
+            </div>
+            <div class="c1" id="id7">
+                <p>Enter your university name</label><span id="required">*</span></p>
+                <select required>
+                    <option>Mumbai University</option>
+                    <option>Pune University</option>
+                    <option>NCERT</option>
+                    <option>ICSE</option>
+                </select>
+            </div>
+            <div class="c1" id="id8">
+                <label for="z">
+                    <p>Enter Email</p>
+                </label>
+                <input type="email" placeholder="your answer" id="z">
+            </div>
+            <div class="c1" id="id9">
+                <label for='y'>
+                    <p>Enter your phone number<span id="required">*</span></p>
+                </label>
+                <input type="text" required id="y">
+            </div>
+            <input type="submit" value="Submit" id="id101" class="c1">
+            <input type="reset" value="Clear form" style="color:blueviolet; background: #d2d4d4; border: 0px;">
+        </form>
+
+        <p class="c2" style="font-size: 13px;text-align: center;">Never submit passwords through Google Forms</p>
+        <p class="c2" style="font-size: 13px; text-align: center;">The content is neither created nor endorsed by google
+            - Report Abuse - Terms of Service - Private Policy</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CSS Display Properties</h1>
+    <p class="block">Block Container</p>
+    <p class="inline">Inline Container</p>
+    <p class="inline-block">Inline-Block Container</p>
+
+    <!-- now task is to create 6 sliders ,2 slider for each type of box -->
+    <!-- 1st two sliders -->
+    <div class="input-group">
+        <div class="slider-group">
+            <label for="block-width-slider" class="slider-label">Block width</label>
+            <input type="range" id="block-width-slider" class="slider red" min="100" max="2000" value="200">
+            <!-- to show value which is selected -->
+            <output id="block-width-output">200</output>
+        </div>
+        <div class="slider-group">
+            <label for="block-height-slider" class="slider-label">Block Height</label>
+            <input type="range" id="block-height-slider" class="slider red" min="100" max="2000" value="200">
+            <output id="block-height-output">200</output>
+        </div>
+    </div>
+    <!-- inline slider -->
+    <div class="input-group">
+        <div class="slider-group">
+            <label for="inline-width-slider" class="slider-label">Inline width</label>
+            <input type="range" id="inline-width-slider" class="slider violet" min="100" max="2000" value="200">
+            <output id="inline-width-output">200</output>
+        </div>
+        <div class="slider-group">
+            <label for="inline-height-slider" class="slider-label">Inline width</label>
+            <input type="range" id="inline-height-slider" class="slider violet" min="100" max="2000" value="200">
+            <output id="inline-height-output">200</output>
+        </div>
+    </div>
+    <!-- inline-bock slider -->
+    <div class="input-group">
+        <div class="slider-group">
+            <label for="inline-block-width-slider" class="slider-label">Inline-Block width</label>
+            <input type="range" id="inline-block-width-slider" class="slider blue" min="100" max="2000" value="200">
+            <output id="inline-block-width-output">200</output>
+        </div>
+        <div class="slider-group">
+            <label for="inline-block-height-slider" class="slider-label">Inline-Block Height</label>
+            <input type="range" id="inline-block-height-slider" class="slider blue" min="100" max="2000" value="200">
+            <output id="inline-block-height-output">200</output>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

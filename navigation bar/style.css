@@ -1,0 +1,79 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+p, a, li{
+    font-size: 1.2rem;
+    color:rgb(101, 30, 89);
+    overflow: hidden;
+}
+a{
+    text-decoration: none; /* to remove text underline */
+}
+.logo{
+    font-size: 1.5rem;
+}
+header{
+    display: flex;
+    justify-content: space-around; /* to define alignment along x axis. Distribute items welcome and menu evenly.Items have a half-size space on either end */
+    align-items: center; /* defines alignment along t axis */
+}
+.navbar{ /* navbar=color1,2 & list is used to assign common style properties to them */
+    height: 100vh; /* bcz we want navigation bar to occupy whole page */
+    position: absolute; /* nav bar appears when key is pressed */
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    transition: all 0.3s linear;
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* now the cancel button should be placed above home menu-todoso use flex direction property */
+    flex-direction: column;
+    width: 90%;/* 90% of parent- color2 */
+    background-color: white;
+}
+.nav-color1{
+    width: 50%; /* 50% means half of size of parent means here html tag  */
+    background-color: #655ddb;
+    max-width: 52rem;
+    min-height: 32rem;
+}
+.nav-color2{
+    width: 95%;/* 95%of parent-color1 */
+    background-color: #3e54ac;
+}
+.nav-list ul{ /* to access ul tag inside a tag having class name-.nav-list */
+    /* now task is to make gap and increase font size of menu-to do so use flex-not that flex x-cancel is not their */    
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    list-style: none;
+}
+.nav-list a{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+.fa-square-xmark{ /* to style cancel button */
+    font-size: 25px;
+    position: absolute;
+    top: 5%;
+    right: 15%;
+}
+.active{
+    transform: translateX(0);
+}
+/* when mouse is above menu(hovering) then underline text */
+.nav-list a:hover{
+    text-decoration: underline;
+    color: rgb(108, 87, 151);
+}

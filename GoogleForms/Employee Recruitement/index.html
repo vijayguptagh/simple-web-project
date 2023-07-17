@@ -1,0 +1,117 @@
+<!-- prepare custom google forms = see yt vid -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="i0">
+        <form>
+            <div id="i1" class="c1">
+                <p id="xx">Candidate Details</p>
+                <hr>
+                <p id="yy">Candidates are required to fill their details.</p>
+                <p class="zz">*Required</p>
+            </div>
+            <div id="i2" class="c1">
+                <label for='a'><p>First Name<span class="zz">*</span></p></label>
+                <input type="text" placeholder="name" id="a" required>
+            </div>
+            <div id="i3" class="c1">
+                <label for='b'><p>Last Name</p></label>
+                <input type="text" placeholder="surname name" id="b">
+            </div>
+            <div id="i4" class="c1">
+                <label for='c'><p>Your Email Address<span class="zz">*</span></p></label>
+                <input type="email"id="c" required>
+            </div>
+            <div id="i5" class="c1">
+                <p>Gender<span class="zz">*</span></p>
+                <label for='e'><input type="radio" name="r"id="e">M</label><br>
+                <label for='f'><input type="radio" name="r"id="f">F</label>
+            </div>
+            <div id="i6" class="c1">
+                <label for='g'><p>Age</p></label>
+                <input type="number" min="18" max="60"id="g">
+            </div>
+            <div id="i7" class="c1">
+                <label for='h'><p>Your address</p></label>
+                <textarea placeholder="residental area"id="h"></textarea>
+            </div>
+            <div id="i8" class="c1">
+                <p>Languages known<span class="zz">*</span></p>
+                <label for='j'><input type="checkbox"id="j">Hindi</label><br>
+                <label for='k'><input type="checkbox"id="k">English</label><br>
+                <label for='l'><input type="checkbox"id="l">Russian</label><br>
+                <label for='m'><input type="checkbox"id="m">Spanish</label><br>
+                <label for='n'><input type="checkbox"id="n">Mandarin</label><br>
+                <label for='o'><input type="checkbox"id="o">Thai</label><br>
+                <label for='p'><input type="checkbox"id="p">Japaneese</label><br>
+                <label for='q'>Other : <input type="text"id="q"></label>
+            </div>
+            <div id="i9" class="c1">
+                <p>Education</p>
+                <label for='s'><input type="checkbox"id="s">BSc IT</label><br>
+                <label for='t'><input type="checkbox"id="t">MSc IT</label><br>
+                <label for='u'><input type="checkbox"id="u">BE/BTech</label><br>
+                <label for='v'><input type="checkbox"id="v">ME/MTech</label><br>
+                <label for='w'><input type="checkbox"id="w">MBA</label><br>
+                <label for='x'><input type="checkbox"id="x">BCA</label>
+            </div>
+            <div id="i10" class="c1">
+                <p>Branch in which you want to work?<span class="zz">*</span></p>
+                <Select>
+                    <option>Banglore,India</option>
+                    <option>Chicago,USA</option>
+                    <option>Bangkok,Thailand</option>
+                    <optgroup label="Europe">
+                        <option>Barcelona,Span</option>
+                        <option>Shanghai,China</option>
+                        <option>Osaka,Japan</option>
+                    </optgroup>
+                    <option>Sant Petersburg,Russia</option>
+                </Select>
+            </div>
+            <div id="i11" class="c1">
+                <p>What position are you applying?<span class="zz">*</span></p>
+                <label for='aa'><input type="radio"id="aa">SDE1</label><br>
+                <label for='ab'><input type="radio"id="ab">SDE2</label><br>
+                <label for='ac'><input type="radio"id="ac">Frontend developer</label><br>
+                <label for='ad'><input type="radio"id="ad">Backend developer</label>
+            </div>
+            <div id="i12" class="c1">
+                <p>What is your current employment status?</p>
+                <label for='af'><input type="radio" name="s"id="af">Employed</label><br>
+                <label for='ag'><input type="radio" name="s"id="ag">Unemployed</label><br>
+                <label for='ah'><input type="radio" name="s"id="ah">Student</label><br>
+                <label for='ai'><input type="radio" name="s"id="ai">Self-Employed</label>
+            </div>
+            <div id="i13" class="c1">
+                <label for='aj'><p>Work Experience</p></label>
+                <input type="text"id="aj">
+            </div>
+            <div id="i14" class="c1">
+                <label for='al'><p>Salary Expectation</p></label>
+                <input type="range" min="15000" max="120000" value="20000"id="al">
+            </div>
+            <div id="i15" class="c1">
+                <label for='am'><p>Availability to start work</p></label>
+                <input type="date"id="am">
+            </div>
+            <div id="i16" class="c1">
+                <label for='an'><p>Upload your Resume here <span class="zz">*</span></p></label>
+                <input type="file"id="an">
+            </div>
+            <input type="submit" value="Submit" id="aaa">
+            <input type="reset" value="Clear form" id="bbb">
+        </form>
+        <p class="c2" style="font-size: 13px;text-align: center;">Never submit passwords through Google Forms</p>
+        <p class="c2" style="font-size: 13px; text-align: center;">The content is neither created nor endorsed by google - Report Abuse - Terms of Service - Private Policy</p>
+    </div>
+</body>
+</html>

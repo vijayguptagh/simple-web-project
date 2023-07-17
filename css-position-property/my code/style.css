@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    /* used to make fs 10px and easily calculate fs of other elements */
+}
+body{
+    height: 200vh;
+}
+
+/* styling header part */
+header{
+    /* if u place height 100vw --> margin is not included in h so it extents slight more than current page view in width */
+    height: 10vh;
+    background-color: blue;
+    /* display:flex;
+    align-items: center; */
+    align-content: center;
+    margin: 10px;
+    padding: 2rem; 
+    font-size: 2rem;
+}
+h1{
+    font-size: 4rem;
+    color: white;
+}
+
+/* styling button part */
+.button-group{
+    margin:1rem;
+    display: flex;
+    justify-content: center;
+}
+.button{
+    color: white;
+    background-color: rgba(35, 185, 35, 0.818);
+    padding: 1rem;
+    margin: 1rem;
+    width: 100px;
+    cursor: pointer;
+}
+
+/* styling container which will be displayed when clicked in button */
+h2{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+code{
+    font-size: 1.2rem;
+    font-style: italic;
+}
+.position-type{
+    width: 300px;
+    border: 1px solid gray;  
+    margin: 10px;
+    padding: 20px;
+    display: none; 
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border: 1px solid #ccc;
+}
+/* Styles for the different types of positioning */
+.static .box{
+    position: static;
+    left: 50px;
+    top: 50px;
+}
+.relative .box{
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+.absolute .box{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+.fixed .box{
+    position: fixed;
+    left: 50px;
+    top: 50px;
+}
+
+
+/* Styles for the main content */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 50%;
+    margin-bottom: 1000px;/* for footer part */
+}
+
+/* for footer part */
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: blue;
+    text-align: center;
+}
