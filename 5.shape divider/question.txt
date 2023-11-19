@@ -1,0 +1,9 @@
+create a website that have a image and shape divider.
+
+steps to follow :
+1. go to https://www.shapedivider.app/
+2. select your shape style and click on download option.
+3. enclose ur image in a div tag (parent of ur img div tag). 
+4. inside that div tag adjacent to img tag add copied html code.
+5. make parent of this copied tag as position:relative
+6. now paste copied css code in ur class.
