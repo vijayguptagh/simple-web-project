@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #b7e4e6;
+            margin:0px 25vh;
+        }
+        *{
+            /* margin: 0px; */
+            padding: 10px;
+        }
+        div{
+            border: 1px solid black;
+            background-color: rgb(255, 255, 255);
+            border-radius: 13px;
+        }
+       span{
+        color: red;
+        margin: 0px;
+        padding: 0;
+       }
+       #did1{
+        margin: 0px;
+        border-top: 8px solid blue;
+       }
+    </style>
+</head>
+
+<body>
+        <div id="did1">
+            <h1>Candidate Details</h1>
+            <p style="border-top: 1px solid black;">candidates are required to fill their details.</p>
+            <span>*Required</span>
+        </div>
+
+    <br>
+        <div>
+            <label for="fname">First Name</label><span>*</span><br>
+            <input type="text" name="" id="fname">
+        </div>
+        <br>
+        <div>
+            <label for="lname">Last Name</label><span>*</span><br>
+            <input type="text" name="" id="lname">
+        </div>
+        <br>
+        <div>
+            <label for="email">Your Email Address</label><span>*</span><br>
+            <input type="email" name="" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="">Gender</label><span>*</span><br>
+            <label for=""><input type="radio" name="gender" id="m">M</label>
+            <label for=""><input type="radio" name="gender" id="f">F</label>
+        </div>
+        <br>
+        <div>
+            <label for="">Age <br><input type="number" name="" id="age"></label>
+        </div>
+        <br>
+        <div>
+            <label for="">Your Address <br><textarea name="" id="address" cols="30" rows="2"></textarea></label>
+        </div>
+        <br>
+        <div>
+            <label for="">Languages</label><br>
+            <label for=""><input type="checkbox" name="" id="">Hindi</label>
+            <label for=""><input type="checkbox" name="" id="">English</label>
+            <label for=""><input type="checkbox" name="" id="">Spanish</label>
+        </div>
+        <br>
+        <div>
+            <label for="">Education</label><br>
+            <label for=""><input type="checkbox" name="" id="">BSC</label>
+            <label for=""><input type="checkbox" name="" id="">MSC</label>
+            <label for=""><input type="checkbox" name="" id="">BCA</label>
+        </div>
+        <br>
+        <div>
+            <label for="">Branch in which you want to work?</label><br>
+            <select name="" id=""><span>*</span>
+                <option value="">Banglore,India</option>
+                <optgroup label="Europe">
+                    <option value="">Germany</option>
+                    <option value="">UK</option>
+                    <option value="">Spain</option>
+                </optgroup>
+                <option value="">Chicago,USA</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="">Date <br><input type="date" name="" id=""></label>
+        </div>
+        <br>
+        <label for="">Upload ur file here <br><input type="file" name="" id=""></label>
+</body>
+
+</html>
